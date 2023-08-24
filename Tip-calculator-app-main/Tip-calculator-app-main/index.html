@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tip calculator app</title>
+  </head>
+  <body>
+    <main class="big-container">
+      <img src="./images/logo.svg" alt="logo" class="logo" />
+      <article class="calculator">
+        <!-- bill -->
+        <div class="bill-container">
+          <strong class="bill-text"> Bill </strong>
+          <img src="./images/icon-dollar.svg" alt="" class="bill-dollar-icon">
+          <input type="text" name="bill" class="bill-input inputs" />
+        </div>
+        <!-- bil end -->
+        <!-- select tip section -->
+        <div class="tip-container">
+          <strong class="tip-text" > Select Tip % </strong>
+          <!-- percent button start -->
+          <div class="buttons-container">
+          <button class="fivePercent-btn percent-btn">5%</button>
+          <button class="tenPercent-btn percent-btn">10%</button>
+          <button class="fifteenPercent-btn percent-btn">15%</button>
+          <button class="twentyFive-Percent-btn percent-btn">25%</button>
+          <button class="fiftyPercent-btn percent-btn">50%</button>
+          <input type="text" class="customPercent-input" placeholder="Custom"></input>
+          </div>
+          <!-- percent button end -->
+        </div>
+        <!-- select tip section end -->
+
+        <!-- number of people -->
+
+        <div class="number-container">
+          <img src="./images/icon-person.svg" alt="" class="person-icon">
+          <strong class="number-text" for="inputNumber"> Number of People </strong>
+          <input type="text" class="number-input inputs" id="inputNumber" min=1/>
+        </div>
+
+        <!-- number of people end-->
+        <!-- result section -->
+        <div class="result">
+          <div class="amount">
+            <strong class="result-amount-header"> Tip Amount </strong>
+            <span class="result-amount-text"> / person </span>
+            <p class="amount-result">4.27$</p>
+          </div>
+          <div class="total">
+            <strong class="result-total-header"> Total </strong>
+            <span class="result-total-text"> / person </span>
+            <p class="total-result">32.27$</p>
+          </div>
+          <button class="reset-btn">Reset</button>
+        </div>
+        <!-- result section end-->
+      </article>
+    </main>
+  </body>
+</html>
